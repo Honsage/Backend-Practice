@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Карскас страницы со снимками NASA</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var settings = {
+            "url": "https://api.nasa.gov/planetary/apod?api_key=<NASA_API_KEY>",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        $.ajax(settings).done(function(response, xhr) {
+            console.log("Return Code: " + xhr.status);
+            var title = response.title;
+            var url = response.url;
+            $("#Temp").append(title);
+            var imageBlock = document.querySelector("#Img");
+            imageBlock.src = url;
+        });
+    </script>
+</head>
+<body>
+    <h1>Страница со свежим снимком NASA</h1>
+    <p>Название снимка: <b><span id="Temp"></span></b>.</p>
+    <p>Изображение:</p>
+    <img id="Img" src="#">
+</body>
+</html>
