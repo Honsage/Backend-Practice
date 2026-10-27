@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: client
+  rsocket:
+    server:
+      port: 0
