@@ -1,0 +1,18 @@
+.home {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}

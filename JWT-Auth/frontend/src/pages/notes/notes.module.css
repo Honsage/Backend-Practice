@@ -1,0 +1,55 @@
+.container { max-width: 800px; margin: 0 auto; }
+h1 { margin-bottom: 30px; color: #333; }
+
+.form {
+  margin-bottom: 40px;
+}
+.form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  resize: vertical;
+}
+.form button {
+  margin-top: 10px;
+  padding: 14px 30px;
+  background: #9be0aa;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.notesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.noteCard {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.noteCard p {
+  flex: 1;
+  margin-right: 15px;
+  line-height: 1.5;
+}
+.actions button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.empty {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}

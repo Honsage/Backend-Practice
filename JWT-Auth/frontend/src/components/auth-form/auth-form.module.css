@@ -1,0 +1,35 @@
+.formContainer {
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 40px 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formContainer input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.formContainer button {
+    width: 100%;
+    padding: 14px;
+    background: #9be0aa;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error {
+    color: #e74c3c;
+    margin: 10px 0;
+}
